@@ -11,10 +11,12 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.*;
 
 import com.sqa.lg.helpers.data.*;
-import com.sqa.lg.helpers.data.DataType;
 import com.sqa.lg.helpers.exceptions.*;
 
 public class DataHelper {
+
+	private static final DataType INT = null;
+	private static final DataType STRING = null;
 
 	public static Object[][] evalDatabaseTable(String driverClassString, String databaseStringUrl, String username,
 			String password, String tableName) throws ClassNotFoundException, SQLException, DataTypesException {
